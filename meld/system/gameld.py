@@ -57,11 +57,11 @@ def change_thresholds(
             # calculate standard deviation of the energy (width)
             tot_sd = compute_energy_width(gamd_log_filename, initial_row, column)
 
-            tot_threshold_sd: List[List[float]] = [
+            tot_threshold_sd: List[float] = [
                 system_runner._simulation.integrator.getGlobalVariableByName(
                     "threshold_energy_Total"
                 ),
-                [tot_sd],
+                tot_sd,
             ]
             if leader == True:
                 # gather energy thresholds and widths
@@ -91,11 +91,11 @@ def change_thresholds(
             # calculate standard deviation of the energy (width)
             dih_sd = compute_energy_width(gamd_log_filename, initial_row, column)
 
-            dih_threshold_sd: List[List[float]] = [
+            dih_threshold_sd: List[float] = [
                 system_runner._simulation.integrator.getGlobalVariableByName(
                     "threshold_energy_Dihedral"
                 ),
-                [dih_sd],
+                dih_sd,
             ]
             if leader == True:
                 # gather energy thresholds and widths
