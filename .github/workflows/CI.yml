@@ -6,7 +6,6 @@ on:
 
   pull_request:
     banches:
-      - "master"
   
 jobs:
   unix:
