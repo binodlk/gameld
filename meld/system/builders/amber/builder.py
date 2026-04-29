@@ -587,6 +587,8 @@ class AmberSystemBuilder:
             "ff12sb": "leaprc.ff12SB",
             "ff14sb": "leaprc.protein.ff14SB",
             "ff14sbside": "leaprc.protein.ff14SBonlysc",
+            "parmbsc1": "leaprc.DNA.bsc1",
+            "OL15": "leaprc.DNA.OL15",
         }
         self._forcefield = ff_dict[self.options.forcefield]
 
